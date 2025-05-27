@@ -1,7 +1,6 @@
 # main.py
 from openweather import get_weather_summary
 from noaa_parser import search_noaa_storms
-from generate_report import create_weather_report
 
 # --- Sample Inputs (will be dynamic later) ---
 zip_code = "45231"
