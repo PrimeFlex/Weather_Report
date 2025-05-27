@@ -1,4 +1,4 @@
-# 🌩️ PrimeFlex Weather Verifier
+# 🌩️ --- PrimeFlex Weather Report ---
 
 A smart backend module that helps validate insurance claims by cross-referencing **real-time weather data** (via OpenWeatherMap) with **official NOAA storm reports**. Designed for use by adjusters, policyholders, or carriers to justify or contest storm-related property claims.
 
@@ -30,14 +30,14 @@ This tool helps confirm or dispute that question using trusted public sources �
 3. It outputs:
    - A human-readable **summary report**
    - Claim validity **recommendation**
-   - Saved `.txt` file for use in documentation
+   - print("\n📄 To save this report, use 'Print to PDF' or copy and paste.")
 
 ---
 
 ## 📁 File Structure
 
 ```
-primeflex-weather-verifier/
+primeflex-weather-report/
 ├── main.py                 # Main runner
 ├── openweather.py          # OWM API logic
 ├── noaa_parser.py          # NOAA CSV scanner
@@ -81,7 +81,11 @@ Wind Speed: 27.9 mph
 🧠 Claim Justification Summary
 ✔️ Storm activity aligns with the reported date and location. Claim likely valid.
 
-📄 Report saved to: claim_weather_report.txt
+print--- Weather Claim Report ---
+print(report)
+
+print("\n📄 To save this report, use 'Print to PDF' or copy and paste.")
+
 ```
 
 ---
@@ -102,5 +106,5 @@ This tool is intended for educational and operational guidance only. Always veri
 ---
 
 ## 👷 Created by PrimeFlex Adjusters  
-[www.primeflexclaims.com](https://www.primeflexclaims.com)  
+[www.primeflex-adjusters.com](https://www.primeflex-adjusters.com)  
 Custom-built by adjusters for adjusters.
