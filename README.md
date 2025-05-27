@@ -30,7 +30,7 @@ This tool helps confirm or dispute that question using trusted public sources �
 3. It outputs:
    - A human-readable **summary report**
    - Claim validity **recommendation**
-   - print("\n📄 To save this report, use 'Print to PDF' or copy and paste.")
+   - 📄 To save this report, use 'Print to PDF' or copy and paste.")
 
 ---
 
