@@ -135,6 +135,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+git rm --cached .env
+git commit -m "Remove .env from tracked files"
+git push
 
 # Spyder project settings
 .spyderproject
