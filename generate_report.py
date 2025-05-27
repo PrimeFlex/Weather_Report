@@ -8,7 +8,7 @@ zip_code = "45231"
 date_of_loss = "2024-04-20"
 lat = 39.2334  # Example: Cincinnati, OH
 lon = -84.5545
-api_key = "YOUR_OPENWEATHER_API_KEY"
+api_key = "REMOVED_API_KEY"
 
 # --- Weather and Storm Lookups ---
 owm_data = get_weather_summary(lat, lon, date_of_loss, api_key)
