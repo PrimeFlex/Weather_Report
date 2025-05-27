@@ -172,3 +172,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# NOAA data file (local use only)
+sample_noaa_data.csv
