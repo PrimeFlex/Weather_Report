@@ -9,14 +9,16 @@ environment variable management, and deployment practices.
 
 ## 📌 Use Case
 
-> “Was there a storm on the date this homeowner is filing a claim?”
+> “What weather events were recorded near a given location on a specific date?”
 
-This tool helps confirm or dispute that question using trusted public sources — making it ideal for:
-- ✅ Pre-claim evaluations
-- ✅ Supplement justifications
-- ✅ Dispute resolution
-- ✅ Field adjuster tools
+This service aggregates publicly available data sources to provide
+contextual weather and storm information, such as:
 
+- Local weather conditions
+- Reported storm events (hail, wind, etc.)
+- Time and location alignment
+
+The output is intended for **informational and technical demonstration purposes only**.
 ---
 
 ## 🧠 How It Works
@@ -31,8 +33,8 @@ This tool helps confirm or dispute that question using trusted public sources �
    - 📄 Storm events from **NOAA CSV logs** (e.g. hail, wind)
 
 3. It outputs:
-   - A human-readable **summary report**
-   - Claim validity **recommendation**
+   - A structured summary of weather conditions
+   - A list of nearby storm events for the specified date**
    - 📄 To save this report, use 'Print to PDF' or copy and paste.")
 
 ---
@@ -40,12 +42,12 @@ This tool helps confirm or dispute that question using trusted public sources �
 ## 📁 File Structure
 
 ```
-primeflex-weather-report/
+local-weather-event-report/
 ├── main.py                 # Main runner
 ├── openweather.py          # OWM API logic
 ├── noaa_parser.py          # NOAA CSV scanner
 ├── generate_report.py      # Formats final report
-├── claim_weather_report.txt
+├── weather_report.txt
 ├── emails_collected.txt    # (optional extension)
 └── sample_noaa_data.csv    # Downloaded from NOAA site
 ```
@@ -55,7 +57,9 @@ primeflex-weather-report/
 ## 🔧 Setup Instructions
 
 1. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
-2. Replace `YOUR_OPENWEATHER_API_KEY` in `main.py`
+2. Set your OpenWeatherMap API key as an environment variable:
+   ```bash
+   export OPENWEATHER_API_KEY=your_key_here
 3. Download NOAA data for your state:
    - Visit [NOAA FTP: Storm Events](https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/)
    - Filter by state, year, and unzip locally
@@ -81,8 +85,8 @@ Wind Speed: 27.9 mph
 🔹 NOAA Storm Reports
 - Hail reported in Hamilton, OHIO on 4/19/2024, Magnitude: 1.25
 
-🧠 Claim Justification Summary
-✔️ Storm activity aligns with the reported date and location. Claim likely valid.
+🧠 Summary
+✔️ Weather and storm activity recorded near the specified location and date..
 
 print--- Weather Report ---
 print(report)
@@ -96,15 +100,14 @@ print("\n📄 To save this report, use 'Print to PDF' or copy and paste.")
 ## 🔄 Future Enhancements
 
 - 🔁 Auto-fetch NOAA data via FTP
-- 🧠 AI-generated justification summary
 - 🛰️ Hail size overlays via premium storm data APIs
-- 🔗 Bubble.io or Google Sites integration
+- Improved data visualization
 
 ---
 
 ## ⚖️ Disclaimer
 
-This tool is intended for educational and operational guidance only. This project provides informational weather data only.
+This project provides informational weather data only.
 It does not provide insurance, legal, or professional advice.
 
 ---
