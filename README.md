@@ -60,6 +60,7 @@ local-weather-event-report/
 2. Set your OpenWeatherMap API key as an environment variable:
    ```bash
    export OPENWEATHER_API_KEY=your_key_here
+When deploying, set the OPENWEATHER_API_KEY in the platform’s environment variable settings.
 3. Download NOAA data for your state:
    - Visit [NOAA FTP: Storm Events](https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/)
    - Filter by state, year, and unzip locally
