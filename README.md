@@ -25,7 +25,7 @@ The output is intended for **informational and technical demonstration purposes 
 
 1. User provides:
    - ZIP code
-   - Date of storm
+   - Date 
    - Latitude/Longitude (optional for accuracy)
 
 2. The system fetches:
@@ -110,7 +110,7 @@ local-weather-event-report/
 
 ```
 📍 Location: ZIP 45231
-📆 Date of Damage: 2024-04-20
+📆 Date: 2024-04-20
 
 🔹 OpenWeather Data
 Condition: Thunderstorm
@@ -118,7 +118,7 @@ Temp: 62.3°F
 Wind Speed: 27.9 mph
 
 🔹 NOAA Storm Reports
-- Hail reported in Hamilton, OHIO on 4/19/2024, Magnitude: 1.25
+- Hail reported in Hamilton, OH on 4/19/2024, Magnitude: 1.25
 
 🧠 Summary
 ✔️ Weather and storm activity recorded near the specified location and date.
