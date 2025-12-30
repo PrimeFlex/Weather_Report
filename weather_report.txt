@@ -1,0 +1,1 @@
+Zip: 45231, Date: 2024-04-20, Weather: {'condition': 'Mist', 'temp': 59.04, 'wind_speed': 9.22}, Storms: []
