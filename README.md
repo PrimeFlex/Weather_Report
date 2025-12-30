@@ -76,20 +76,26 @@ local-weather-event-report/
   
   ---
   
-3.Prepare NOAA Storm Event Data (Local Use)
+### 3. Prepare NOAA Storm Event Data (Local Use)
   This project uses NOAA storm event CSV files for historical storm data.
    - Download data from:
      ```bash
      https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/
      ```
    - Filter by state, year, and unzip locally
-4. Unzip & Rename your NOAA file to:
+
+     ---
+     
+### 4. Unzip & Rename your NOAA file to:
    ```bash
    sample_noaa_data.csv
    ```
    - Place the file in the root directory.
    - Note: NOAA data is not auto-fetched and must be provided manually.
-5.Run the Application Locally:
+
+   ---
+   
+### 5. Run the Application Locally:
    ```bash
    python app.py
    ```
@@ -124,9 +130,9 @@ Wind Speed: 27.9 mph
 
 ## 🔄 Future Enhancements
 
-- 🔁 Auto-fetch NOAA data via FTP
-- 🛰️ Hail size overlays via premium storm data APIs
-- Improved data visualization
+   - 🔁 Auto-fetch NOAA data via FTP
+   - 🛰️ Hail size overlays via premium storm data APIs
+   - Improved data visualization
 
 ---
 
