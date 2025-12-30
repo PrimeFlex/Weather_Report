@@ -33,9 +33,9 @@ The output is intended for **informational and technical demonstration purposes 
    - 📄 Storm events from **NOAA CSV logs** (e.g. hail, wind)
 
 3. It outputs:
-   - A structured summary of weather conditions
-   - A list of nearby storm events for the specified date**
-   - 📄 To save this report, use 'Print to PDF' or copy and paste.")
+   - A structured summary of weather conditions.
+   - A list of nearby storm events for the specified date.
+   - 📄 To save this report, use 'Print to PDF' or copy and paste.
 
 ---
 
@@ -43,7 +43,7 @@ The output is intended for **informational and technical demonstration purposes 
 
 ```
 local-weather-event-report/
-├── main.py                 # Main runner
+├── app.py                 # Main runner
 ├── openweather.py          # OWM API logic
 ├── noaa_parser.py          # NOAA CSV scanner
 ├── generate_report.py      # Formats final report
@@ -115,12 +115,8 @@ Wind Speed: 27.9 mph
 - Hail reported in Hamilton, OHIO on 4/19/2024, Magnitude: 1.25
 
 🧠 Summary
-✔️ Weather and storm activity recorded near the specified location and date..
+✔️ Weather and storm activity recorded near the specified location and date.
 
-print--- Weather Report ---
-print(report)
-
-print("\n📄 To save this report, use 'Print to PDF' or copy and paste.")
 
 ```
 
