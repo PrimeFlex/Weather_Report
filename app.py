@@ -26,7 +26,7 @@ def index():
 def weather_report():
     try:
         zip_code = request.args.get('zip')
-        date_of_loss = request.args.get('date')
+        date_of_storm = request.args.get('date')
         lat = float(request.args.get('lat'))
         lon = float(request.args.get('lon'))
         api_key = os.getenv("OPENWEATHER_API_KEY")
@@ -34,8 +34,8 @@ def weather_report():
         if not all([zip_code, date_of_storm, lat, lon, api_key]):
             return jsonify({"error": "Missing parameters or API key"}), 400
 
-        weather = get_weather_summary(lat, lon, date_of_loss, api_key)
-        storms = search_noaa_storms(zip_code, date_of_loss)
+        weather = get_weather_summary(lat, lon, date_of_storm, api_key)
+        storms = search_noaa_storms(zip_code, date_of_storm)
 
         return jsonify({
             "zip": zip_code,
