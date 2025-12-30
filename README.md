@@ -56,19 +56,47 @@ local-weather-event-report/
 
 ## 🔧 Setup Instructions
 
-1. Get a free API key from [OpenWeatherMap](https://openweathermap.org/api)
-2. Set your OpenWeatherMap API key as an environment variable:
-   ```bash
-   export OPENWEATHER_API_KEY=your_key_here
-When deploying, set the OPENWEATHER_API_KEY in the platform’s environment variable settings.
-3. Download NOAA data for your state:
-   - Visit [NOAA FTP: Storm Events](https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/)
+### 1. Get an OpenWeatherMap API Key
+  Create a free account at:
+  https://openweathermap.org/api
+
+  ---
+
+### 2. Set the API Key as an Environment Variable
+
+  On macOS / Linux:
+  ```bash
+  export OPENWEATHER_API_KEY=your_api_key_here
+  ```
+  On Windows (PowerShell):
+  ```bash
+  setx OPENWEATHER_API_KEY "your_api_key_here"
+  ```
+  When deploying, set the OPENWEATHER_API_KEY in the platform’s environment variable settings.
+  
+  ---
+  
+3.Prepare NOAA Storm Event Data (Local Use)
+  This project uses NOAA storm event CSV files for historical storm data.
+   - Download data from:
+     ```bash
+     https://www.ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/
+     ```
    - Filter by state, year, and unzip locally
-4. Rename your NOAA file to `sample_noaa_data.csv`
-5. Run the tool in Replit or locally:
+4. Unzip & Rename your NOAA file to:
    ```bash
-   python main.py
+   sample_noaa_data.csv
    ```
+   - Place the file in the root directory.
+   - Note: NOAA data is not auto-fetched and must be provided manually.
+5.Run the Application Locally:
+   ```bash
+   python app.py
+   ```
+   - Open your browser at:
+     ```bash
+     http://localhost:10000
+     ```
 
 ---
 
