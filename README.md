@@ -1,7 +1,10 @@
-# 🌩️ --- PrimeFlex Weather Report ---
+# 🌩️ --- Local Weather Event Report ---
 
-A smart backend module that helps validate insurance claims by cross-referencing **real-time weather data** (via OpenWeatherMap) with **official NOAA storm reports**. Designed for use by adjusters, policyholders, or carriers to justify or contest storm-related property claims.
+A lightweight backend service that aggregates public weather
+and storm event data for a given location and date.
 
+This project demonstrates backend system design, API integration,
+environment variable management, and deployment practices.
 ---
 
 ## 📌 Use Case
@@ -81,7 +84,7 @@ Wind Speed: 27.9 mph
 🧠 Claim Justification Summary
 ✔️ Storm activity aligns with the reported date and location. Claim likely valid.
 
-print--- Weather Claim Report ---
+print--- Weather Report ---
 print(report)
 
 print("\n📄 To save this report, use 'Print to PDF' or copy and paste.")
@@ -101,10 +104,9 @@ print("\n📄 To save this report, use 'Print to PDF' or copy and paste.")
 
 ## ⚖️ Disclaimer
 
-This tool is intended for educational and operational guidance only. Always verify final claim decisions with your carrier, public adjuster, or legal team.
+This tool is intended for educational and operational guidance only. This project provides informational weather data only.
+It does not provide insurance, legal, or professional advice.
 
 ---
 
-## 👷 Created by PrimeFlex Adjusters  
-[www.primeflex-adjusters.com](https://www.primeflex-adjusters.com)  
-Custom-built by adjusters for adjusters.
+
