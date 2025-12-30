@@ -25,7 +25,7 @@ The output is intended for **informational and technical demonstration purposes 
 
 1. User provides:
    - ZIP code
-   - Date of loss
+   - Date of storm
    - Latitude/Longitude (optional for accuracy)
 
 2. The system fetches:
