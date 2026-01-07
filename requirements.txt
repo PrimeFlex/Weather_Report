@@ -1,0 +1,4 @@
+requests
+python-dotenv
+pandas  # If you're parsing NOAA CSVs with pandas
+Flask
