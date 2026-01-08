@@ -42,6 +42,9 @@ The output is intended for **informational and technical demonstration purposes 
 ## 🖥️ Web Interface
 
 The application includes a simple web form for submitting requests.
+```
+https://weather-report-p5xt.onrender.com/
+```
 
 ### Screenshot – Web Interface
 ![Web Interface](screenshots/ui-form.png)
