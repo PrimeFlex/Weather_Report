@@ -138,6 +138,8 @@ venv.bak/
 git rm --cached .env
 git commit -m "Remove .env from tracked files"
 git push
+.idea/
+
 
 # Spyder project settings
 .spyderproject
